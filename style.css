@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Nova+Square&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto+Condensed:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    letter-spacing: 1.5px;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.main h1{
+    text-align: center;
+    color: #d55845;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.signup{
+    border: 2px solid #d55845;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: fit-content;
+    color: #d55845;
+    padding: 15px;
+}
+.fields{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.name,.lastName,.email,.password,.confirmPass,.submit,.Gender,.phone,.City,.profession{
+    width: 48%;
+    margin: 10px auto;
+}
+.email{
+    width: 98%;
+}
+.Gender select,.City select{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.Gender select option,.City select option{
+    color: #000;
+}
+#passText,#confrmPass{
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: -33px;
+    margin-top: 5px;
+    color: #ff0000;
+    animation: stricking 1s ease infinite;
+    display: none;
+}
+.signup input{
+    color: #d55845;
+    border: 2px solid #d55845;
+    width: 100%;
+    height: 40px;
+    background: none;
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+input::placeholder{
+    color: #000;
+}
+@keyframes stricking {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    } 
+}
+.submit{
+    width: 150px;
+    margin: auto;
+}
+.submit button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* .submit button{
+    width: 130px;
+} */
+.submit #update{
+    background-color: #24c71e;
+}
+button{
+    width: 100%;
+    margin: 15px auto 0;
+    height: 30px;
+    background-color: #d55845;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+label{
+    margin-bottom: 0;
+}
+
+.signup input{
+    width: 100%;
+    height: 40px;
+    background: none;
+    color: #d55845;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+.signup input:focus{
+    background-color: #d55845;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.signup input:focus::placeholder{
+    color: #fff;
+}
+p{
+    text-align: center;
+    color: #d55845;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+p a{
+    color: #d55845;
+    /* text-decoration: none; */
+}
+input[type="radio"]{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.Gender p{
+    padding-bottom: 0;
+}

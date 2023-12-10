@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile{
+    border: 2px solid #d55845;
+    border-radius: 10px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 10px 30px;
+}
+#picSec{
+    line-height: 2;
+}
+#picSec img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+#picSec h1{
+    color: #d55845;
+    font-size: 21px;
+}
+#Follow{
+    background-color: #24c71e;
+}
+#Message{
+    background-color: #d55845;
+}
+#picSec button{
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+#details{
+    
+}
+#details div{
+    display: flex;
+    text-align: left;
+    margin: 20px 0;
+}
+#details div h4{
+    color: #c95948;
+    font-family: sans-serif;
+    width: 100px;
+}
+#details div p{
+    margin-left: 22px;
+    color: #000;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#Update{
+    background-color: #d55845;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+#Back{
+    background-color: #4d97dd;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#Back a,#Update a{
+    color: #fff;
+    text-decoration: none;
+}

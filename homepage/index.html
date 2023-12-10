@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <div id="main">
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../Assets/Images/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Companies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Messages</a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <img src="" alt="" class="imag" id="imag">
+          <button class="btn dropdown-toggle" id="userName" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+
+            <a class="nav-link" href="#" class="userName">UserName</a>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./profile.html">Profile</a></li>
+            <li id="logout"><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Section -->
+  <main>
+    <div class="main">
+      <div class="sidebarLeft">
+        <div class="profile">
+          <div id="color"></div>
+          <img src="" alt="" class="imag">
+          <h5 id="userName">UserName</h5>
+          <p id="profession">No Profession Yet</p>
+          <div class="follow">
+            <h5>Following</h5>
+            <p>34</p>
+          </div>
+          <div class="follow">
+            <h5>Followers</h5>
+            <p>155</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="centerContent">
+        <div class="post">
+          <div class="proImg">
+            <img src="" alt="" class="imag">
+          </div>
+          <div>
+            <button id="pstPrjt">Post a Project</button>
+            <button id="PstJob">Post a Job</button>
+          </div>
+        </div>
+        <div class="postes">
+        <div class="showpost">
+          <!-- Post User Image -->
+          <div class="postUserInfo">
+            <div class="userImg">
+              <img src="../Assets/Images/person_image.png" alt="">
+              <h6>John Doe</h6>
+            </div>
+            <div class="postSetting">
+              <i class="bi bi-three-dots-vertical" style="color: #000;"></i>
+            </div>
+          </div>
+          <!-- Job Location and Message-->
+          <div class="locatAndMsg">
+            <div class="locat">
+              <!-- Company Name -->
+              <div class="compName">
+                <img src="../Assets/Images/companyLogo.png" alt="" width="20px">
+                <p>Epic Coder</p>
+              </div>
+              <!-- Company Location -->
+              <div class="compLocat">
+                <img src="../Assets/Images/LocationLogo.png" alt="" width="20px">
+                <p>Pakistan</p>
+              </div>
+            </div>
+            <div class="mesag">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <!-- JobDesigation -->
+          <h2>Senior WordPress Developer</h2>
+          <!-- Job Time -->
+          <div class="jobTime">
+            <h4>Full Time</h4>
+            <h6>$30/hr</h6>
+          </div>
+          <!-- Job Description -->
+          <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusantium magni dolores laudantium commodi blanditiis quia eaque quo, repudiandae, iste consectetur perferendis ipsum voluptas tempore.</p>
+
+        </div>
+      </div>
+
+      </div>
+      <div class="sidebarRight">
+
+      </div>
+    </div>
+  </main>
+</div>
+  <!-- Post Form -->
+  <div class="Post">
+    <h3>Create Post</h3>
+    <input type="text" placeholder="Company Name" id="CmpNme">
+    <input type="text" placeholder="Company Location" id="CmpLocat">
+    <input type="text" placeholder="Job Designation" id="Designation">
+    <select name="" id="jobTiming">
+      <option value="#" selected disabled>Job Timing</option>
+      <option value="Full Time">Full Time</option>
+      <option value="Part Time">Part Time</option>
+    </select>
+    <input type="text" placeholder="Company Budget" id="package">
+    <textarea name="" id="jobDesp" cols="30" rows="5" placeholder="Enter Job Description"></textarea>
+    <button onclick="postHandler()">Create Post</button>
+  </div> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="home.js"></script>
+</body>
+
+</html>

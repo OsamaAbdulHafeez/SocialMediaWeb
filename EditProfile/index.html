@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="signup">
+            <h1>Edit Profile</h1>
+            <!-- <form action=""> -->
+                <div class="fields">
+                    <div class="name">
+                        <input type="text" placeholder="Enter First Name" id="firstName">
+                    </div>
+                    <div class="lastName">
+                        <input type="text" placeholder="Enter Last Name" id="lastName">
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="Enter Email" id="email">
+                    </div>
+                    <div class="phone">
+                        <input type="text" placeholder="Enter Phone Number" id="phone">
+                    </div>
+                    <div class="Gender">
+                        <select name="" id="gender">
+                            <option value="#" selected disabled>Selected Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="City">
+                        <select name="" id="city">
+                            <option value="#" selected disabled>Selected City</option>
+                            <option value="Karachi">Karachi</option>
+                            <option value="Lahore">Lahore</option>
+                            <option value="Islamabad">Islamabad</option>
+                            <option value="Peshawar">Peshawar</option>
+                            <option value="Quetta">Quetta</option>
+                        </select>
+                    </div>
+                    <div class="password">
+                        <input type="text" placeholder="Enter Password" id="password">
+                        <p id="passText">Password Should be At least 8 Chracter</p>
+                    </div>
+                    <div class="confirmPass">
+                        <input type="text" placeholder="Confirm Password" id="confirmpass">
+                        <p id="confrmPass">Password or Confirm Password not same</p>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button onclick="updateHandler()" id="update"><a href="../homepage/index.html">Update</a></button>
+                    <button id="back"><a href="../homepage/index.html">Go Back</a></button>
+                </div>
+            <!-- </form> -->
+        </div>
+    </div>
+    
+    <script src="edit.js"></script>
+</body>
+</html>
